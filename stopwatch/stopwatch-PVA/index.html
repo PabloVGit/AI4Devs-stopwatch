@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronómetro y Cuenta Atrás</title>
+    <!-- Enlace a TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex flex-col items-center justify-center h-screen">
+
+    <!-- Cronómetro -->
+
+    <div class="flex flex-col items-center justify-center space-y-4">
+        <h2>Cronómetro</h2>
+        <div id="cronometroDisplay" class="text-5xl font-mono text-blue-600">00:00:00</div>
+        <div class="flex space-x-4">
+            <button id="startCrono"
+                class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">Iniciar / Continuar</button>
+            <button id="stopCrono"
+                class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">Detener</button>
+            <button id="resetCrono"
+                class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">Reiniciar</button>
+        </div>
+    </div>
+
+    <!-- Cuenta Atrás -->
+ 
+    <div class="flex flex-col items-center justify-center space-y-4 mt-8">
+        <h2>Cuenta Atrás</h2>
+        <div id="cuentaAtrasDisplay" class="text-5xl font-mono text-purple-600">00:00:00</div>
+        <div class="grid grid-cols-3 gap-4 mt-4">
+            <!-- Botones numéricos del 0 al 9 -->
+            <button class="bg-gray-300 hover:bg-gray-400 text-black font-bold py-2 px-4 rounded">1</button>
+            <button class="bg-gray-300 hover:bg-gray-400 text-black font-bold py-2 px-4 rounded">2</button>
+            <button class="bg-gray-300 hover:bg-gray-400 text-black font-bold py-2 px-4 rounded">3</button>
+            <button class="bg-gray-300 hover:bg-gray-400 text-black font-bold py-2 px-4 rounded">4</button>
+            <button class="bg-gray-300 hover:bg-gray-400 text-black font-bold py-2 px-4 rounded">5</button>
+            <button class="bg-gray-300 hover:bg-gray-400 text-black font-bold py-2 px-4 rounded">6</button>
+            <button class="bg-gray-300 hover:bg-gray-400 text-black font-bold py-2 px-4 rounded">7</button>
+            <button class="bg-gray-300 hover:bg-gray-400 text-black font-bold py-2 px-4 rounded">8</button>
+            <button class="bg-gray-300 hover:bg-gray-400 text-black font-bold py-2 px-4 rounded">9</button>
+            <button class="col-span-3 bg-gray-300 hover:bg-gray-400 text-black font-bold py-2 px-4 rounded">0</button>
+        </div>
+        <div class="flex space-x-4 mt-4">
+            <button id="startCountdown"
+                class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">Iniciar / Continuar</button>
+            <button id="stopCountdown"
+                class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">Detener</button>
+            <button id="resetCountdown"
+                class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">Reiniciar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
